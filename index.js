@@ -1,6 +1,8 @@
-import express from "express";
-import cors from "cors";
-import chalk from "chalk";
+const express = require("express");
+const cors = require("cors");
+const chalk = require("chalk");
+
+const textRoutes = require("./routes/api/text.js");
 
 const app = express();
 const PORT = process.env.PORT || 3000 || 5000 || 8080;
@@ -14,12 +16,13 @@ app.set("json spaces", 2);
 /**============================================
  *               SETUP ROUTES
  *=============================================**/
-app.get("/", (_, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     app_name: "Candaan API",
     author: "ardhptr21",
     description: "Rest API untuk mengumpulkan joke joke (candaan-candaan) dari Indonesia",
     version: "v1.0.0",
+    endpoint: `${req.protocol}://${req.hostname}`,
     message: "Punya jokes mu sendiri? yok ikut berkontribusi 🤩",
     repository: "https://github.com/ardhptr21/candaan-api",
     email: "ardhiputrapradana21@gmail.com",
@@ -30,6 +33,7 @@ app.get("/", (_, res) => {
     },
   });
 });
+app.use("/api/text", textRoutes);
 
 /**============================================
  *               LISTENING APP

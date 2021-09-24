@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Rest API untuk mengumpulkan joke joke (candaan-candaan) dari Indonesia",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node ."
   },
