@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Rest API untuk mengumpulkan joke joke (candaan-candaan) dari Indonesia",
   "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ardhptr21/candaan-api.git"
@@ -14,5 +18,10 @@
     "joke"
   ],
   "author": "ardhptr21",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
