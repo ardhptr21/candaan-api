@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node ."
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
