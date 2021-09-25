@@ -3,6 +3,7 @@ const cors = require("cors");
 const chalk = require("chalk");
 
 const textRoutes = require("./routes/api/text.js");
+const imageRoutes = require("./routes/api/image");
 
 const app = express();
 const PORT = process.env.PORT || 3000 || 5000 || 8080;
@@ -33,7 +34,9 @@ app.get("/", (req, res) => {
     },
   });
 });
+
 app.use("/api/text", textRoutes);
+app.use("/api/image", imageRoutes);
 
 /**============================================
  *               LISTENING APP
