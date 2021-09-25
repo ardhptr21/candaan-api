@@ -19,12 +19,16 @@ app.set("json spaces", 2);
  *=============================================**/
 app.get("/", (req, res) => {
   res.status(200).json({
-    app_name: "Candaan API",
+    api_name: "Candaan API",
     author: "ardhptr21",
     description: "Rest API untuk mengumpulkan joke joke (candaan-candaan) dari Indonesia",
     version: "v1.0.0",
-    endpoint: `${req.protocol}://${req.hostname}`,
-    message: "Punya jokes mu sendiri? yok ikut berkontribusi 🤩",
+    end_points: {
+      "/api/text": "Mendapatkan semua data candaan berupa teks",
+      "/api/text/random": "Mendapatkan satu data candaan berupa teks secara random",
+      "/api/image": "Mendapatkan semua data candaan berupa gambar secara random",
+      "/api/image/random": "Mendapatkan satu data candaan berupa gambar secara random",
+    },
     repository: "https://github.com/ardhptr21/candaan-api",
     email: "ardhiputrapradana21@gmail.com",
     social: {
