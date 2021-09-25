@@ -21,7 +21,8 @@ app.get("/", (req, res) => {
   res.status(200).json({
     api_name: "Candaan API",
     author: "ardhptr21",
-    description: "Rest API untuk mengumpulkan joke joke (candaan-candaan) dari Indonesia",
+    description:
+      "Candaan API merupakan Rest API yang dibuat untuk mendapatkan beberapa jokes jokes receh dari Indonesia, semua data data yang ada di Candaan API diambil dari internet yang kemudian dikumpulkan menjadi satu, untuk dibuat Rest API",
     version: "v1.0.0",
     end_points: {
       "/api/text": "Mendapatkan semua data candaan berupa teks",

@@ -2,7 +2,7 @@
 
 # Candaan API 😁
 
-**Candaan API** merupakan rest API yang dibuat untuk mendapatkan beberapa candaan candaan yang ada di Indonesia
+**Candaan API** merupakan Rest API yang dibuat untuk mendapatkan beberapa jokes jokes receh dari Indonesia, semua data data yang ada di **Candaan API** diambil dari internet yang kemudian dikumpulkan menjadi satu, untuk dibuat Rest API
 
 [![MIT License](https://img.shields.io/github/license/ardhptr21/candaan-api)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![MIT License](https://img.shields.io/badge/author-ardhptr21-blue)](https://github.com/ardhptr21/)
