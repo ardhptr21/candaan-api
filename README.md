@@ -13,13 +13,13 @@
 
 **BASE URL: [https://candaan-api.vercel.app](https://candaan-api.vercel.app)**
 
-| Endpoint                   | Description                                                                                                                                                                                                                                    | Parameter | Method |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ |
-| `/`                        | Menampilkan informasi **Candaan API**                                                                                                                                                                                                          | NO        | GET    |
-| `/api/text`                | Mendapatkan semua data candaan berupa `array of string` sebanyak data yang ada                                                                                                                                                                 | NO        | GET    |
-| `/api/text/random?count=`  | Mendapatkan satu data candaan secara random berupa `string` jika tidak menyertakan query `count`, dan jika menyertakan query `count` berupa `number` akan mengembalikan data random berupa `array of string` sebanyak value dari query `count` | `count`   | GET    |
-| `/api/image`               | Mendapatkan semua data candaan berupa `array of object` sebanyak data yang ada                                                                                                                                                                 | NO        | GET    |
-| `/api/image/random?count=` | Mendapatkan satu data candaan secara random berupa `object` jika tidak menyertakan query `count`, dan jika menyertakan query `count` berupa `number` akan mengembalikan data random berupa `array of object` sebanyak value dari query `count` | `count`   | GET    |
+| Endpoint            | Description                                                                                                                                                                                                                                    | Parameter | Method |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ |
+| `/`                 | Menampilkan informasi **Candaan API**                                                                                                                                                                                                          | NO        | GET    |
+| `/api/text`         | Mendapatkan semua data candaan berupa `array of string` sebanyak data yang ada                                                                                                                                                                 | NO        | GET    |
+| `/api/text/random`  | Mendapatkan satu data candaan secara random berupa `string` jika tidak menyertakan query `count`, dan jika menyertakan query `count` berupa `number` akan mengembalikan data random berupa `array of string` sebanyak value dari query `count` | `count`   | GET    |
+| `/api/image`        | Mendapatkan semua data candaan berupa `array of object` sebanyak data yang ada                                                                                                                                                                 | NO        | GET    |
+| `/api/image/random` | Mendapatkan satu data candaan secara random berupa `object` jika tidak menyertakan query `count`, dan jika menyertakan query `count` berupa `number` akan mengembalikan data random berupa `array of object` sebanyak value dari query `count` | `count`   | GET    |
 
 # Contoh 💻
 
